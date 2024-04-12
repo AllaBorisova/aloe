@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Форма покупки</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.css">
+  </head>
+  <body>
+    <div class="page-flex">
+      <div class="bg-menu"></div>
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <nav class="nav">
+              <ul class="nav__list"> 
+                <li class="nav__list-item"><a class="nav__link" href="#">Правила акции</a></li>
+                <li class="nav__list-item"><a class="nav__link" href="#">Победители</a></li>
+                <li class="nav__list-item"><a class="nav__link" href="#">Призы</a></li>
+              </ul>
+            </nav>
+            <div class="header__login"><a class="header__link" href="">+7 (999) 999-99-99</a></div>
+            <button class="hamburger" type="button">
+              <div class="hamburger__button"><span></span><span></span><span></span></div>
+            </button>
+          </div>
+        </div>
+        <div class="header-popup"> 
+          <div class="header-popup__inner"> 
+            <div class="header-popup__close"> </div>
+            <div class="header-popup__subtitle">Меню:</div>
+            <div class="header-popup__list"> 
+              <ul>
+                <li><a href="">Правила акции</a></li>
+                <li><a href="">Победители</a></li>
+                <li><a href="">Призы</a></li>
+                <li><a href="">Войти</a></li>
+                <li><a href="">Регистрация</a></li>
+              </ul>
+            </div>
+            <div class="header-popup__subtitle">Телефон:</div>
+            <div class="header-popup__text"><a class="header__phone" href="tel:8 (383) 319-54-64">8 (383) 319-54-64</a></div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container"> 
+          <div class="add-sale">
+            <div class="add-sale__title">Добавить покупку</div>
+            <form action="">
+              <label class="input-file">
+                <input type="file" name="file"><span class="input-file__load-img hide"><img src="./img/add.svg" alt="">Загрузить</span><span class="input-file__result"><span class="input-file__name"></span><span class="input-file__delete"></span></span><span class="input-file__error active">
+                  <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.19662 12.4171L12.8032 1.81055" stroke="#DA2B15" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M12.8033 12.1896L2.19666 1.58301" stroke="#DA2B15" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></svg>Ошибка загрузки</span>
+              </label>
+              <div class="custom-switch">
+                <label class="switch">
+                  <input type="checkbox"/><span class="switch__slider"></span><span>Согласен с правилами акции</span>
+                </label>
+              </div>
+              <input class="button button-reg" type="submit" value="Сохранить">
+            </form>
+          </div>
+        </div>
+      </main>
+      <div class="sales">
+        <div class="container"> 
+          <div class="sales__title"> <span>Ваши покупки</span></div>
+          <div class="sales__items">
+            <div class="sales__item"> 
+              <div class="sales__number">#001</div>
+              <div class="sales__name">Зарегистрировано упаковок: 5</div>
+              <div class="sales__bill">Чек № 123456789-11</div>
+              <div class="sales__date">Дата: 10-07-2024</div>
+            </div>
+            <div class="sales__item"> 
+              <div class="sales__number">#002</div>
+              <div class="sales__name">Зарегистрировано упаковок: 2</div>
+              <div class="sales__bill">Чек № 123456789-11</div>
+              <div class="sales__date">Дата: 10-07-2024</div>
+            </div>
+            <div class="sales__item"> 
+              <div class="sales__number">#003</div>
+              <div class="sales__name">Зарегистрировано упаковок: 2</div>
+              <div class="sales__bill">Чек № 123456789-11</div>
+              <div class="sales__date">Дата: 10-07-2024</div>
+            </div>
+            <div class="sales__item"> 
+              <div class="sales__number">#004</div>
+              <div class="sales__name">Зарегистрировано упаковок: 2</div>
+              <div class="sales__bill">Чек № 123456789-11</div>
+              <div class="sales__date">Дата: 10-07-2024</div>
+            </div>
+            <div class="sales__item"> 
+              <div class="sales__number">#005</div>
+              <div class="sales__name">Зарегистрировано упаковок: 2</div>
+              <div class="sales__bill">Чек № 123456789-11</div>
+              <div class="sales__date">Дата: 10-07-2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">© 2024</div>
+        </div>
+      </footer>
+    </div>
+    <script src="./libs/js/jquery.min.js"></script>
+    <script src="./libs/js/jquery.maskedinput.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
